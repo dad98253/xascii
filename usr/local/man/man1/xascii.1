@@ -1,0 +1,49 @@
+.TH XASCII 1 "Release 4" "X Version 11"
+.SH NAME
+xascii - ascii character set table for X
+.SH SYNOPSIS
+.ta 8n
+\fBxascii\fP	[-option]
+.br
+.SH DESCRIPTION
+The
+.I xascii 
+program displays the complete ascii character set along with each character's
+value in either decimal, hexidecimal, or octal notation.
+.SH OPTIONS
+.I Xascii
+accepts all of the standard X Toolkit command line options along with the 
+additional options listed below:
+.TP 8
+.B \-hc \fIcolor\fP
+This option specifies the color that the title, values, and buttons will
+be displayed in.  The default is \fIred\fP.
+.TP 8
+.B \-vf \fIfont\fP
+This option specifies the font that the ascii characters and their values
+will be displayed in.  The default is \fIcourier\fP.
+.SH RESOURCES
+.PP
+Application specific resources (see app defaults file for more info):
+.PP
+.TP 8
+.B "highlightColor"
+Specifies the color that the title, values, and buttons will be displayed in.
+.TP 8
+.B "valueFont"
+Specifies the font that the ASCII characters and their values will be displayed
+in.
+.PP
+.SH BUGS
+.PP
+None that I know of
+.PP
+.SH COPYRIGHT
+Copyright 1991, Ken Kirksey.
+.br
+.SH AUTHOR
+Ken Kirksey (Auburn University)
+.br
+Internet: kkirksey@eng.auburn.edu
+.br
+FidoNet: 3613/13.4 
