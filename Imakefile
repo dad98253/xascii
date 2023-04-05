@@ -1,0 +1,27 @@
+INSTALL_DIR=/usr/local
+
+BINDIR		= $(INSTALL_DIR)/bin
+LIBDIR		= $(INSTALL_DIR)/lib
+INCDIR		= $(INSTALL_DIR)/include/$(PROGRAM)
+XAPPLOADDIR	= $(INSTALL_DIR)/lib/X11/app-defaults
+CONFIGDIR	= /usr/lib/X11/config
+MKDIRHIER	= /bin/sh /usr/bin/X11/mkdirhier
+MANDIR		= $(INSTALL_DIR)/man/man1
+MANSUFFIX	= 1
+
+
+LOCAL_LIBRARIES = XawClientLibs
+
+SRCS = xascii.c
+OBJS = xascii.o
+
+#SRCS = xascii.orig.c
+#OBJS = xascii.orig.o
+
+#SRCS = xascii.horiz.c
+#OBJS = xascii.horiz.o
+
+ComplexProgramTarget(xascii)
+
+InstallAppDefaults(XAscii)
+
