@@ -1,0 +1,15 @@
+Prerequsites
+------------
+xascii requires X11R5 or later.
+
+Build Instructions
+------------------
+
+    xmkmf
+    make depend
+    make
+
+Running xascii
+------------
+See the man page.
+
